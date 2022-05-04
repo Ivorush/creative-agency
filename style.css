@@ -1,0 +1,485 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto' , sans-serif;
+}
+:root {
+    --gap: 4px;
+    --background-page: #111;
+    --background-container: #333;
+    --background-box: #222;
+    --color-line: #666;
+    --color-font: #444;
+    --columns: 3;
+    --border-radius: 3px;
+    --font-size: 18px;
+    --font-family: Arial;
+    --transition-duration: 600ms;
+    --transition-style: ease-in-out;
+    --container-max-width: 640px;
+  }
+
+.banner {
+    background-color: #90D4C5;;
+    height: 60vh;
+    min-height: 600px;
+    font-family: 'Roboto' , sans-serif;
+    background-image: url('https://images.pexels.com/photos/1724888/pexels-photo-1724888.jpeg?cs=srgb&dl=pexels-steve-johnson-1724888.jpg&fm=jpg');
+    background-position: center bottom;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    font-weight: 1000;
+}
+
+.header {
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.header span:hover{
+    color: #89cdbd;
+}
+.menu {
+    display: flex;
+    font-size: 16px;
+    color: white;
+    align-items: center;
+}
+
+.menu span {
+    margin-right: 30px;
+    cursor: pointer;
+}
+
+.contact2 {
+    background-color: white;
+    color: black;
+    padding: 8px 30px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.2s all ease-in-out;
+}
+.contact2 a{
+    color: inherit;
+    text-decoration: none;
+}
+
+.contact2:hover {
+    background-color: antiquewhite;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 70px;
+    flex-grow: 1;
+    color: white;
+    font-weight: bold;
+}
+
+.arrow {
+    margin-top: 60px;
+    height: 400px;
+    width: 400px;
+}
+
+.section1 {
+    margin-top: -80px;
+    width: 96%;
+    display: flex;
+    height: 350px;
+    background-color: white;
+    margin-left: 20px;
+    -webkit-box-shadow: 0px 0px 3px 1px rgba(0,0,0,0.51);
+   -moz-box-shadow: 0px 0px 3px 1px rgba(0,0,0,0.51);
+   box-shadow: 0px 0px 3px 1px rgba(0,0,0,0.51);
+}
+
+.section2{
+    display: flex;
+    height: 350px;
+  -webkit-box-shadow: 0px 0px 3px 1px rgba(0,0,0,0.51);
+   -moz-box-shadow: 0px 0px 3px 1px rgba(0,0,0,0.51);
+   box-shadow: 0px 0px 3px 1px rgba(0,0,0,0.51);
+   background-color: white;
+    margin-left: 20px;
+    width: 96%;
+}
+
+.section1 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.section1 .left {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.section1 .text-container {
+    width: 70%;
+}
+
+.section1 .button {
+    width: 420px;
+    height: 6px;
+    
+   
+}
+
+.section1 .button img{
+    border-radius: 50px;
+     width: 100%;
+    height: 100%;
+    object-fit: cover;
+   
+}
+
+.section2 .left{
+    background-image: url("./assets/cool-background(1).png");
+    background-position: center top;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    
+}
+.section2 .left:hover::before {
+    opacity: 1;
+  }
+
+
+
+
+.left h1 {
+    font-size: 40px;
+    margin-bottom: 16px;
+}
+
+.left p {
+    color: #848391;
+    line-height: 1.8;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 16px;
+}
+
+.left .button {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.left div img {
+    width: 150px;
+}
+
+.left, .right {
+    flex: 1;
+}
+
+.left img, .right img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.client-image {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.client-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.testimonials {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #FFFBF8;
+    padding-top: 200px;
+    padding-bottom: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
+    font-family: 'Roboto' sans-serif;
+}
+
+.testimonials h1 {
+    color: #A0A1A2;
+    font-size:29px;
+    margin-top: -100px;
+    margin-bottom: 40px;
+    font-weight: 900;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.clients {
+    display: flex;
+    justify-content: space-between;
+   
+}
+
+
+.clients .client {
+    display: flex;
+    flex-direction: column;
+    flex: 0.3;
+    align-items: center;
+}
+
+.client .client-image {
+    margin-bottom: 30px;
+}
+
+.client p {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #848391;
+    line-height: 1.8;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.client .details {
+    text-align: center;
+}
+
+.client h4 {
+    color: #A0A1A2;
+    margin-top: 8px;
+    font-weight: 900;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.examples {
+    display: flex;
+    margin: calc(var(--gap)/2); 
+    box-shadow: 0 0 2px rgba(0,0,0,1);
+    transition: all var(--transition-duration) var(--transition-style);
+}
+
+.examples div {
+    flex: 0.25;
+}
+.contact .row{
+    background: url(./assets/cool-background\(2\).png);
+    display: flex;
+    flex-wrap: wrap;
+    gap:1.5rem;
+    align-items: center;
+    box-shadow: 0 1rem 2rem rgba(0,0,0,.1);
+}
+  
+.contact .row .image{
+    flex:1 1;
+    
+    width: 100px;
+}
+
+.contact .heading span{
+    font-size: 3.5rem;
+  background:rgba(0, 255, 102, 0.2);
+  color:var(--orange);
+  border-radius: .5rem;
+  padding:.2rem 1rem;
+}
+
+.contact .heading {
+    text-align: center;
+    padding:2.5rem 0
+}
+  
+.contact .row .image img{
+    width:450px;
+    height: 400px;
+}
+  
+.contact .row form{
+    flex:1 1 ;
+    padding:2rem;
+    
+    border-radius: .5rem;
+}
+  
+.contact .row form .inputBox{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+}
+  
+  .contact .row form .inputBox input, .contact .row form textarea{
+    width:49%;
+    margin:1rem 0;
+    padding:1rem;
+    font-size:12px;
+    color:#333;
+    background:#f7f7f7;
+    text-transform: none;
+    height: 1px;
+    border-radius: 5px;
+  }
+  
+  .contact .row form textarea{
+    height: 1rem;
+    resize: none;
+    width:90%;
+  }
+  .btn{
+   
+    border-radius: 10px;
+    background: #90D4C5;
+    color:rgb(0, 0, 0);
+    padding:.8rem 3rem;
+    border:.2rem solid var(--orange);
+    cursor: pointer;
+    font-size: 1.2rem;
+    
+    
+  }
+
+  .btn:hover{
+      color: #90D4C5;
+      background-color:rgb(91, 91, 91);
+  }
+
+.examples img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.examples:hover  {
+    background: var(--background-container);
+    color: var(--color-line);
+  }
+
+.footer {
+    background-color: #90D4C5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.footer .logo {
+    color: #2D7465;
+}
+
+.footer-navigation {
+    color: #4F9485;
+    margin-top: 30px;
+    font-weight: bold;
+}
+
+.footer-navigation span{
+    padding: 8px;
+    cursor: pointer;
+}
+
+.footer-navigation span:hover {
+    color: #2D7465;
+}
+
+.footer .social-media {
+    margin-top: 30px;
+}
+
+.social-media img {
+    padding: 4px;
+}
+
+.section2 h1 {
+    color: #24554A;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.section2 .left p {
+    text-align: center;
+    color: #589688;
+    font-weight: bold;
+    font-size: 12px;
+    width: 60%;
+}
+
+@media (max-width: 575.98px) {
+
+    .section1 {
+        flex-direction: column;
+        height: auto;
+        margin-left: 8px;
+    }
+    .section1 .button {
+        width: 230px;
+        height: 6px;
+        
+       
+    }
+   
+    .contact .row form .inputBox input{
+        width:100%;font-size: 14px;
+      }
+     .contact .heading span{
+        font-size: 1.7rem;
+      }
+
+
+    .btn{
+        width: 100%;
+    }
+
+    .contact .row .image {
+        display: none;
+        
+    }
+    .section2 {
+        flex-direction: column;
+        height: auto;
+       
+        margin-left: 8px;
+    }
+    .section1 .left {
+        padding-bottom: 20px;
+        padding-top: 20px;
+    }
+    .section2 .left {
+        padding-bottom: 20px;
+        padding-top: 20px;
+    }
+
+    .examples {
+        flex-wrap: wrap;
+    }
+
+    .examples div {
+        flex: 0.5;
+        flex-basis: 50%;
+    }
+    .menu{
+        opacity: 0;
+    }
+    .main{
+        font-size: 40px;
+    }
+
+    .clients {
+        flex-direction: column;
+    }
+    .clients .client {
+        margin-top: 50px;
+    }
+}
+
